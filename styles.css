@@ -1,0 +1,100 @@
+h1{
+	font-size: max(6vw, 50px);
+	margin: 0;
+}
+
+h2{
+	font-size: max(3vw, 32px);
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+h3{
+	font-size: max(2.25vw, 28px);
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+p{
+	font-size: max(2vw, 24px);
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 0.1rem;
+	margin-bottom: 0.1rem;
+}
+
+body{
+	text-align: center;
+	color: white;
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+main{
+	animation: animationIn 3s;
+}
+
+hr{
+	border: 0;
+	clear:both;
+	display:block;
+	width: 100%;                
+	background-color:#FFFFFF;
+	height: 1px;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes animationIn{
+	from{
+		opacity: 0;
+		transform: translateY(-50px);
+	}
+	to{
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+:root{
+	--link-color: #ffffd9;
+}
+
+a:link {
+  color: var(--link-color);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: var(--link-color);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #ffff9f;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: var(--link-color);
+  background-color: transparent;
+  text-decoration: underline;
+}
